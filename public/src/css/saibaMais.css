@@ -1,0 +1,74 @@
+:root {
+  --font-primary: "Baloo Da 2", serif;
+  --font-secundary: "Josefin Slab", serif;
+  --font-action: "Mulish", serif;
+}
+
+.saibaMais {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  transition: all 1s;
+  z-index: 101;
+  overflow: hidden;
+}
+
+.show-saibaMais .saibaMais {
+  left: 0;
+}
+.saibaMais h1 {
+  text-align: center;
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  color: #4b4b4b;
+  border-bottom: solid 3px #976849;
+  margin-bottom: 1.5rem;
+}
+
+.saibaMais p {
+  margin: auto 1.5rem;
+  line-height: 2.5rem;
+  font-family: var(--font-secundary);
+  font-size: 1.8rem;
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+.retornarBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.retornarBtn button {
+  margin-top: 2rem;
+  font-family: var(--font-action);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background: #e3884f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e3884f,
+    #d46621
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e3884f,
+    #d46621
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  animation: moveBanner 1s 0.9s forwards;
+}
+
+.retornarBtn button:hover {
+  color: black;
+  cursor: pointer;
+}

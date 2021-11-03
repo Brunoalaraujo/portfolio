@@ -1,0 +1,77 @@
+:root {
+  --font-primary: "Baloo Da 2", serif;
+  --font-secundary: "Josefin Slab", serif;
+  --font-action: "Mulish", serif;
+}
+
+footer {
+  width: 100%;
+  height: 3.5rem;
+  background-color: #17181b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content p {
+  font-family: var(--font-secundary);
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
+.social-list a {
+  margin: 0 1.2rem;
+  color: blanchedalmond;
+  font-size: 1.3rem;
+}
+
+.social-list ul {
+  display: flex;
+}
+
+#link-topo {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background: #e3884f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e3884f,
+    #d46621
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e3884f,
+    #d46621
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.1rem 0.6rem #00000009;
+}
+
+#link-topo:hover {
+  color: black;
+}
+
+.repositorio {
+  background-color: #17181b;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-family: var(--font-secundary);
+  color: white;
+  border: none;
+}
+
+.repositorio > a {
+  text-decoration: none;
+  color: #d46621;
+}

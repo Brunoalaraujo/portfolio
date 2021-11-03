@@ -1,0 +1,53 @@
+/* Laptop */
+@media (max-width: 1024px) {
+  .saibaMais p {
+    margin: 1rem 4rem;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 875px) {
+  .saibaMais p {
+    font-size: 1.2rem !important;
+  }
+
+  .projetos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 0.8rem;
+  }
+
+  .conhecimentos {
+    margin: 2rem 4rem 2rem 4rem;
+    display: flex !important;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .conhecimento-header {
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .conhecimento-git > .conhecimento-text > p {
+    margin-bottom: 2rem;
+  }
+
+  .conhecimento {
+    width: 35%;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+  }
+
+  .conhecimentos-img-wrapper {
+    display: none;
+  }
+}
